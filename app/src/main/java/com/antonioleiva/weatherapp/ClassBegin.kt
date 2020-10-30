@@ -1,16 +1,6 @@
 package com.antonioleiva.weatherapp
 
-import android.app.Activity
-import android.content.Intent
-import android.os.Build
-import android.widget.LinearLayout
-import androidx.annotation.RequiresApi
-import androidx.core.content.ContextCompat.startActivity
-import com.antonioleiva.weatherapp.activities.MainActivity
-import com.antonioleiva.weatherapp.activities.MainActivity2
-import kotlinx.android.synthetic.main.activity_main_begin.view.*
-
-class ClassBegin : LinearLayout {
+/*class ClassBegin : LinearLayout {
     private fun inits() {
         /*iniText()
         iniListeners(R.layout.activity_main_begin,intent = )*/
@@ -18,17 +8,17 @@ class ClassBegin : LinearLayout {
             text = resources.getString(R.string.info_week)
 
             setOnClickListener {
-                //val intent = Intent(this@MainActivityBegin, ActivityWeek2::class.java)
-                val intent = Intent(this@MainActivityBegin, MainActivity2::class.java)
-                startActivity(intent)
+
+                //val intent = Intent(this@MainActivityBegin, MainActivity2::class.java)
+                //startActivity(intent)
             }
         }
 
     }
 
     private fun Listener(activityBegin: MainActivityBegin, activity2: MainActivity2) {
-        val intent = Intent(MainActivityBegin::class.java, MainActivity2::class.java)
-        startActivity(intent)
+        //val intent = Intent(MainActivityBegin::class.java, MainActivity2::class.java)
+        //startActivity(intent)
     }
 
     private fun iniListeners(CurrentActivity: Activity, intent: Intent) {
@@ -37,12 +27,7 @@ class ClassBegin : LinearLayout {
             intent.putExtra(MainActivityBegin.PARAM, "Pol")
             CurrentActivity.finish()
         }
-        /*bt_changeScrean2.setOnClickListener {
-            val intent = Intent(this@MainActivityBegin, ActivityWeek2::class.java)
-            //val intent = Intent(this@MainActivityBegin, MainActivity2::class.java)
-            intent.putExtra(MainActivityBegin.PARAM,"Pol")
-            startActivity(intent)
-        }*/
+
     }
 
     @RequiresApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
@@ -50,13 +35,12 @@ class ClassBegin : LinearLayout {
 
         val text = R.string.info_week.toString()
         bt_change_screan.text = text
-        //getString(,R.string.info_week)
-        //bt_changeScrean2.text = getString(R.string.info_week)
+
         val text2 = R.string.week_1.toString()
         tv_week1.text = text2
-        //tv_week2.text = getString(R.string.week_2)
+
     }
-}
+}*/
 /*
 class ButtonWithLoaderLayout : LinearLayout {
     private var mTvButton: TextView? = null
