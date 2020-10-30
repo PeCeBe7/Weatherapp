@@ -8,8 +8,6 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.antonioleiva.weatherapp.activities.MainActivity;
-
 class ClassBeginJava extends LinearLayout {
 
     private TextView mTvButton;
@@ -23,13 +21,13 @@ class ClassBeginJava extends LinearLayout {
     private void inits() {
         LayoutInflater inflater = LayoutInflater.from(getContext());
         inflater.inflate(R.layout.activity_main_begin, this, true);
-        Intent intento = new Intent(MainActivityBegin, MainActivity);
-        Intent intent = new Intent(R.layout.activity_main_begin, );
+        //Intent intento = new Intent(MainActivityBegin, MainActivity);
+        //Intent intent = new Intent(R.layout.activity_main_begin, );
 
         bindViews();
         setTextButton(String.valueOf(R.string.info_week));
         //iniListener(R.layout.activity_main_begin,intent);
-        iniListener(MainActivityBegin, intent);
+        //iniListener(MainActivityBegin, intent);
     }
 
     private void iniListener(final Activity currentActivity, final Intent resultIntent) {
