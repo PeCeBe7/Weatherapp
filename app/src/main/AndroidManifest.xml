@@ -31,7 +31,7 @@
         <activity
             android:name="com.example.weatherapp.MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".MainActivityBegin">
+        <activity android:name=".activities.MainActivityBegin">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

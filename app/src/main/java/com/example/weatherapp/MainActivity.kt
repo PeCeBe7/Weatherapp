@@ -10,7 +10,6 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.antonioleiva.weatherapp.MainActivityBegin
 import com.antonioleiva.weatherapp.R
 import com.example.weatherapp.ForecastListAdapter
 import org.jetbrains.anko.find

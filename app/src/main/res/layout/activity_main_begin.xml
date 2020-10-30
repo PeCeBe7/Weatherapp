@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivityBegin">
+    tools:context=".activities.MainActivityBegin">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -14,40 +14,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:background="@color/ink"
-                android:orientation="vertical"
-                android:padding="16dp">
 
-                <TextView
-                    android:textColor="@color/WHITE"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/week_1" />
-                <!--<TextView
-                    style="@style/XXXLMediumWhite"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/testing_text_styles" />
-                <TextView
-                    style="@style/ButtonSecondaryDark"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:onClick="actionClick"
-                    android:text="@string/testing_button_style" />-->
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/info_week"
-                    android:layout_marginTop="4dp"
-                    android:id="@+id/changeScrean" />
-            </LinearLayout>
+
+         <com.antonioleiva.weatherapp.customviews.CustomFontTextView
+             android:id="@+id/custom_botton_carlos"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="4dp"
+             />
+
+
+
 
             <LinearLayout
                 android:layout_width="match_parent"

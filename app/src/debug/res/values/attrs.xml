@@ -1,0 +1,31 @@
+<resources>
+
+
+    <!--Utils-->
+    <declare-styleable name="CustomFontTextView">
+        <attr name="tvfontName" format="string" />
+        <attr name="ripple" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomFontButton">
+        <attr name="bfontName" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomFontToogleButton">
+        <attr name="tbfontName" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomFontChronometer">
+        <attr name="cbfontName" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomFontEditText">
+        <attr name="etfontName" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomElectricSpinner">
+        <attr name="circleSpeed" format="integer" />
+        <attr name="spinnerSpeed" format="integer" />
+    </declare-styleable>
+
+</resources>
