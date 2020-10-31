@@ -33,6 +33,7 @@ class MainActivity2 : AppCompatActivity() {
         "Sab  5/7 -  Nublado  - 23/18",
         "Dom  6/7 -  Soleado  - 20/7"
     )
+
     /*private val itemsEs2 = listOf(
         "Lun 30/6 - Soleado - 31/17",
         "Mar 1/7 - Tormenta - 21/8",
