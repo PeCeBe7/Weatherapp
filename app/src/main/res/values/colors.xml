@@ -6,4 +6,7 @@
     <color name="RED">#DA0303</color>
     <color name="WHITE">#FFFFFF</color>
     <color name="ink">#333333</color>
+    <color name="GREY">#C8C7C7</color>
+    <color name="MORE_GREY">#8F8F8F</color>
+    <color name="DARK">#292929</color>
 </resources>

@@ -11,8 +11,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.antonioleiva.weatherapp.MainActivityBegin
+import com.antonioleiva.weatherapp.MainActivityBegin.Companion.PARAM
 import com.antonioleiva.weatherapp.R
 import com.example.weatherapp.ForecastListAdapter
+import kotlinx.android.synthetic.main.activity_main3.*
 import org.jetbrains.anko.find
 
 
@@ -30,12 +32,16 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main3)
 
-        val forecastList = find<RecyclerView>(R.id.forecast_list)
+        val param = intent.getStringExtra(PARAM)
+
+        tv_week1.text = getString(R.string.week_1)
+
+        val forecastList = find<RecyclerView>(R.id.rv_forecast_list)
         forecastList.layoutManager = LinearLayoutManager(this)
         forecastList.adapter = ForecastListAdapter(items)
-        val boton1 = findViewById<Button>(R.id.changeScrean)
+        val boton1 = findViewById<Button>(R.id.bt_change_screan)
         boton1.setOnClickListener {
             val intent = Intent(this@MainActivity, MainActivityBegin::class.java)
             startActivity(intent)

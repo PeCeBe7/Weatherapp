@@ -1,109 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="8dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bt_change_screan"
+        android:gravity="center"
+        android:layout_marginBottom="8dp">
 
         <LinearLayout
+            android:id="@+id/ll_first_week"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:id="@+id/prueba">
+            android:orientation="vertical">
 
             <TextView
+                android:id="@+id/tv_week1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Semana 1"
-                android:gravity="top|center"
+                android:gravity="center"
                 android:textSize="50sp"
-                android:id="@+id/texto">
-
-            </TextView>
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/WHITE" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/forecast_list"
+                android:id="@+id/rv_forecast_list"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/texto" />
+                android:layout_below="@+id/tv_texto"
+                android:background="@color/colorPrimary" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Semana 2"
-                android:gravity="top|center"
-                android:textSize="50sp"
-                android:layout_below="@id/forecast_list"
-                android:id="@+id/texto2">
 
-            </TextView>
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/forecast_list2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/texto" />
-
-            <Button
-                android:id="@+id/changeScrean"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Cambiar Pantalla"
-                android:layout_below="@+id/forecast_list"
-                android:layout_centerHorizontal="true"></Button>
         </LinearLayout>
-        <!--<TextView
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:text="Semana 1"
-           android:gravity="top|center"
-           android:textSize="50sp"
-           android:id="@+id/texto">
 
-       </TextView>
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/forecast_list"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/texto"/>
-
-       <TextView
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:text="Semana 2"
-           android:gravity="top|center"
-           android:textSize="50sp"
-           android:layout_below="@id/forecast_list"
-           android:id="@+id/texto2">
-
-       </TextView>-->
-        <!--<androidx.core.widget.NestedScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:id="@+id/prueba">
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/forecast_list"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/lista2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/forecast_list"/>
-        </androidx.core.widget.NestedScrollView>-->
-
-        <!--<Button
-            android:id="@+id/changeScrean"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Cambiar Pantalla"
-            android:layout_below="@+id/prueba"
-            android:layout_centerHorizontal="true"
-            >
-            android:layout_below="@+id/texto2"
-        </Button>-->
     </RelativeLayout>
-</FrameLayout>
+
+    <Button
+        android:id="@+id/bt_change_screan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Volver" />
+</RelativeLayout>
+

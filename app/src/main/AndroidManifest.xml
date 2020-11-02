@@ -38,20 +38,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.MainActivity">
-            <!--<intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
-        </activity>
-        <activity android:name=".activities.MainActivity2">
-            <!--<intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".activities.MainActivity" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
-        </activity>
+        <activity android:name=".activities.MainActivity2" />
+
+        <activity android:name="com.example.weatherapp.ActivityWeek2" />
     </application>
 
 </manifest>

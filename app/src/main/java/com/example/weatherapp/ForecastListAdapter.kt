@@ -29,21 +29,11 @@ class ForecastListAdapter(val items: List<String>) :
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.textView.text = items[position]
-        holder.textView.setTextColor(Color.RED)
-        holder.textView.setTextSize(20F)
-        holder.textView.setBackgroundColor(Color.BLACK)
-        holder.textView.setPadding(200, 35, 345, 0)
-        /*val button = holder.messageButton
-        button.text="Cambiar Pantall"*/
+        holder.textView.setPadding(275, 35, 305, 0)
+        holder.textView.setTextSize(15F)
+        holder.textView.setTextColor(Color.WHITE)
     }
-    /*@RequiresApi(Build.VERSION_CODES.O)
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.textView.text = items[position]
-        holder.textView.setTextColor(Color.RED)
-        holder.textView.setTextSize(20F)
-        holder.textView.setBackgroundColor(Color.BLACK)
-        holder.textView.setPadding(200,35,0,0)
-    }*/
+
 
     override fun getItemCount(): Int = items.size
 
